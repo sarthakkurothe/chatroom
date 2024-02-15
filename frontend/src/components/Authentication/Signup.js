@@ -35,7 +35,7 @@ const Signup = () => {
     }
     if (password !== confirmpassword) {
       toast({
-        title: "Passwords do Not Match",
+        title: "Passwords do not match",
         status: "warning",
         duration: 5000,
         isClosable: true,
@@ -199,3 +199,5 @@ const Signup = () => {
 };
 
 export default Signup;
+
+

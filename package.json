@@ -4,8 +4,11 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon backend/server.js"
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "build": "npm install --legacy-peer-deps && npm install --legacy-peer-deps --prefix frontend && npm run build --prefix frontend"
   },
+  
   "author": "sarthak",
   "license": "ISC",
   "dependencies": {
@@ -16,6 +19,7 @@
     "express-async-handler": "^1.2.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.1.2",
-    "nodemon": "^3.0.3"
+    "nodemon": "^3.0.3",
+    "socket.io": "^4.7.4"
   }
 }
