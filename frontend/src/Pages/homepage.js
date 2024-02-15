@@ -7,6 +7,7 @@ import {
   TabPanels,
   Tabs,
   Text,
+  Center
 } from "@chakra-ui/react";
 import { useEffect } from "react";
 import { useHistory } from "react-router";
@@ -34,9 +35,11 @@ function Homepage() {
         borderRadius="lg"
         borderWidth="1px"
       >
-        <Text fontSize="4xl" fontFamily="Work sans">
-          Chat-Room
-        </Text>
+        <Center>
+          <Text fontSize="4xl" fontFamily="Work sans">
+            Chat-Room
+          </Text>
+        </Center>
       </Box>
       <Box bg="white" w="100%" p={4} borderRadius="lg" borderWidth="1px">
         <Tabs isFitted variant="soft-rounded">
