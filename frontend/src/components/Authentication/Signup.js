@@ -24,7 +24,7 @@ const Signup = () => {
     setPicLoading(true);
     if (!name || !email || !password || !confirmpassword) {
       toast({
-        title: "Please Fill all the Feilds",
+        title: "Please fill all the fields",
         status: "warning",
         duration: 5000,
         isClosable: true,
@@ -100,9 +100,9 @@ const Signup = () => {
     if (pics.type === "image/jpeg" || pics.type === "image/png") {
       const data = new FormData();
       data.append("file", pics);
-      data.append("upload_preset", "chat-app");
-      data.append("cloud_name", "");
-      fetch("", {
+      data.append("upload_preset", "chatroom");
+      data.append("cloud_name", "dlqtovbqe");
+      fetch("https://api.cloudinary.com/v1_1/dlqtovbqe/image/upload", {
         method: "post",
         body: data,
       })
